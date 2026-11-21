@@ -2,51 +2,66 @@
 <html><head><meta charset="utf-8"><style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{width:1024px;height:1024px;background:#f7f3e8;color:#111;font-family:'Noto Serif',Georgia,serif;overflow:hidden}
-.top{height:26px;background:#111;color:#f7f3e8;display:flex;justify-content:space-between;align-items:center;padding:0 14px;font-family:'Noto Sans',Arial,sans-serif;font-size:11px;letter-spacing:2px}
-.mast{text-align:center;padding:4px 0 1px;border-bottom:4px double #111}
-.mast h1{font-size:56px;line-height:.95;letter-spacing:6px;font-weight:900}
-.dateline{font-family:'Noto Sans',Arial,sans-serif;font-size:15px;letter-spacing:3px;font-weight:700;padding:4px 0 6px}
+.top{height:24px;background:#111;color:#f7f3e8;display:flex;justify-content:space-between;align-items:center;padding:0 14px;font-family:'Noto Sans',Arial,sans-serif;font-size:11px;letter-spacing:2px}
+.mast{text-align:center;padding:3px 0 1px;border-bottom:4px double #111}
+.mast h1{font-size:52px;line-height:.95;letter-spacing:6px;font-weight:900}
+.dateline{font-family:'Noto Sans',Arial,sans-serif;font-size:14px;letter-spacing:3px;font-weight:700;padding:3px 0 5px}
 .dateline span{color:#a31621}
-.sub{font-family:'Noto Sans',Arial,sans-serif;font-size:10px;letter-spacing:1px;color:#444;padding-bottom:6px}
+.sub{font-family:'Noto Sans',Arial,sans-serif;font-size:10px;letter-spacing:1px;color:#444;padding-bottom:5px}
 .datecheck{font-family:'Noto Sans',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;color:#1a7a2e;text-align:center;padding:3px 0;border-bottom:1px solid #111}
-.lead{display:flex;gap:12px;padding:5px 14px 6px;border-bottom:2px solid #111}
+.lead{display:flex;gap:12px;padding:4px 14px 5px;border-bottom:2px solid #111}
 .leadtext{flex:1.25}
 .kicker{font-family:'Noto Sans',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;color:#a31621}
-.leadtext h2{font-size:27px;line-height:1.05;font-weight:900;margin:3px 0 4px}
-.leadtext p{font-size:12px;line-height:1.25}
+.leadtext h2{font-size:26px;line-height:1.05;font-weight:900;margin:3px 0 4px}
+.leadtext p{font-size:11.5px;line-height:1.22}
 .leadtext .num{font-family:'Noto Sans',Arial,sans-serif;font-size:11px;font-weight:700}
-.illus{flex:1;position:relative;height:152px;background:linear-gradient(#cfe3f2 0 55%,#7fa8c9 55% 72%,#4d7ba3 72%);border:1px solid #111;overflow:hidden}
-.sky{position:absolute;top:14px;left:20px;font-family:'Noto Sans',Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;color:#333}
+.illus{flex:1;position:relative;height:138px;background:linear-gradient(#cfe3f2 0 55%,#7fa8c9 55% 72%,#4d7ba3 72%);border:1px solid #111;overflow:hidden}
+.sky{position:absolute;top:12px;left:20px;font-family:'Noto Sans',Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;color:#333}
 .burst{position:absolute;width:64px;height:64px;border-radius:50%;background:radial-gradient(circle,#ffd23f 0 25%,#f47c20 45%,#c1121f 70%,transparent 72%)}
-.b1{top:32px;left:60px}.b2{top:50px;left:180px;width:46px;height:46px}.b3{top:24px;left:270px;width:38px;height:38px}
-.smoke{position:absolute;width:90px;height:26px;border-radius:50%;background:#555;opacity:.55;top:72px;left:52px}
-.smoke2{top:84px;left:176px;width:70px}
-.river{position:absolute;bottom:0;left:0;right:0;height:52px;background:repeating-linear-gradient(90deg,#3d6f9e 0 26px,#35638f 26px 52px)}
-.bridge{position:absolute;bottom:44px;left:0;right:0;height:10px;background:#222}
-.pylon{position:absolute;bottom:52px;width:10px;height:56px;background:#222}
-.p1{left:80px}.p2{left:200px}.p3{left:320px}
-.cable{position:absolute;bottom:52px;width:2px;height:56px;background:#222;transform:rotate(24deg);transform-origin:bottom}
+.b1{top:26px;left:56px}.b2{top:44px;left:176px;width:46px;height:46px}.b3{top:20px;left:268px;width:38px;height:38px}.b4{top:52px;left:120px;width:30px;height:30px}
+.smoke{position:absolute;width:90px;height:26px;border-radius:50%;background:#555;opacity:.55;top:64px;left:48px}
+.smoke2{top:76px;left:172px;width:70px}
+.smoke3{top:58px;left:250px;width:60px;height:20px}
+.river{position:absolute;bottom:0;left:0;right:0;height:50px;background:repeating-linear-gradient(90deg,#3d6f9e 0 26px,#35638f 26px 52px)}
+.river2{position:absolute;bottom:26px;left:0;right:0;height:3px;background:#9db8cc;opacity:.7}
+.bridge{position:absolute;bottom:42px;left:0;right:0;height:10px;background:#222}
+.truss{position:absolute;bottom:52px;left:0;right:0;height:40px;background:repeating-linear-gradient(45deg,transparent 0 8px,#222 8px 10px,transparent 10px 18px),repeating-linear-gradient(-45deg,transparent 0 8px,#222 8px 10px,transparent 10px 18px);opacity:.55}
+.pylon{position:absolute;bottom:50px;width:10px;height:52px;background:#222}
+.p1{left:76px}.p2{left:196px}.p3{left:316px}
+.cable{position:absolute;bottom:50px;width:2px;height:52px;background:#222;transform-origin:bottom}
+.c1{left:96px;transform:rotate(18deg)}.c2{left:176px;transform:rotate(-18deg)}.c3{left:216px;transform:rotate(18deg)}.c4{left:296px;transform:rotate(-18deg)}
+.debris{position:absolute;width:14px;height:6px;background:#222;opacity:.8}
+.d1{bottom:52px;left:120px;transform:rotate(24deg)}.d2{bottom:54px;left:240px;transform:rotate(-18deg)}
 .cap{position:absolute;bottom:8px;left:10px;font-family:'Noto Sans',Arial,sans-serif;font-size:9.5px;color:#fff;background:rgba(0,0,0,.55);padding:2px 6px}
 .markets{background:#111;color:#f7f3e8;font-family:'Noto Sans',Arial,sans-serif;display:flex;justify-content:space-between;padding:5px 14px;font-size:12.5px;border-bottom:2px solid #111}
 .markets b{color:#ff5a5a}.markets .up{color:#7ddb8a}
+.mapstrip{margin:0 14px;padding:3px 0 2px;border-bottom:1px solid #111}
+.mapstrip svg{display:block;width:996px;height:72px;background:#dce8f0;border:1px solid #b9ad8d}
+.mapcap{font-family:'Noto Sans',Arial,sans-serif;font-size:9px;letter-spacing:.4px;padding-top:2px;color:#444}
 .cols{display:flex;gap:0;padding:3px 10px 2px}
 .col{flex:1;padding:0 8px;border-right:1px solid #bbb}
 .col:last-child{border-right:none}
-.col h3{font-family:'Noto Sans',Arial,sans-serif;font-size:11px;letter-spacing:2px;background:#111;color:#f7f3e8;padding:3px 6px;margin-bottom:5px}
-.story{font-size:10px;line-height:1.18;margin-bottom:3px}
-.chart{border:1px solid #111;background:#fff;padding:3px 6px;margin:4px 0}
+.col h3{font-family:'Noto Sans',Arial,sans-serif;font-size:11px;letter-spacing:2px;background:#111;color:#f7f3e8;padding:3px 6px;margin-bottom:4px}
+.story{font-size:9.3px;line-height:1.06;margin-bottom:2px}
+.src{font-family:'Noto Sans',Arial,sans-serif;font-size:8px;font-weight:800;letter-spacing:.5px;color:#a31621}
+.conf{font-size:8px;color:#1a7a2e;letter-spacing:1px}
+.conf.med{color:#b45309}
+.chart{border:1px solid #111;background:#fff;padding:3px 6px;margin:3px 0}
 .chart-title{font-family:'Noto Sans',Arial,sans-serif;font-size:9px;font-weight:700;letter-spacing:1.5px;margin-bottom:2px}
-.brow{display:flex;align-items:center;gap:4px;margin-bottom:2px}
-.blab{font-family:'Noto Sans',Arial,sans-serif;font-size:8.5px;font-weight:700;width:48px;flex:none}
-.bar{flex:1;height:8px;background:#eee;position:relative}
+.brow{display:flex;align-items:center;gap:4px;margin-bottom:1px}
+.blab{font-family:'Noto Sans',Arial,sans-serif;font-size:8.5px;font-weight:700;width:52px;flex:none}
+.bar{flex:1;height:7px;background:#eee;position:relative}
 .bar i{position:absolute;left:0;top:0;bottom:0;background:#c1121f}
 .bar i.up{background:#1a7a2e}
 .bval{font-family:'Noto Sans',Arial,sans-serif;font-size:8.5px;font-weight:700;width:44px;text-align:right;flex:none}
-.story b{font-family:'Noto Sans',Arial,sans-serif;font-size:10.5px}
+.story b{font-family:'Noto Sans',Arial,sans-serif;font-size:10px}
 .story .n{color:#a31621;font-family:'Noto Sans',Arial,sans-serif;font-weight:700}
+.srcmat{margin:0 14px;padding:3px 2px;border-top:2px solid #111;border-bottom:1px solid #111;font-family:'Noto Sans',Arial,sans-serif;font-size:8.5px;line-height:1.3}
+.srcmat b{font-size:9px;letter-spacing:1px}
+.srcmat .k{color:#a31621;font-weight:800}
 .timeline{margin:0 14px;border-top:2px solid #111;padding:3px 0 1px}
 .timeline h3{font-family:'Noto Sans',Arial,sans-serif;font-size:11px;letter-spacing:2px;margin-bottom:2px}
-.timeline .row{display:flex;font-family:'Noto Sans',Arial,sans-serif;font-size:10px;line-height:1.25}
+.timeline .row{display:flex;font-family:'Noto Sans',Arial,sans-serif;font-size:10px;line-height:1.18}
 .timeline .row span{width:52px;font-weight:700;color:#a31621;flex:none}
 .foot{display:flex;justify-content:space-between;padding:3px 14px 0;font-family:'Noto Sans',Arial,sans-serif;font-size:10px;color:#444;border-top:1px solid #111;margin-top:2px}
 </style></head>
@@ -54,97 +69,137 @@ body{width:1024px;height:1024px;background:#f7f3e8;color:#111;font-family:'Noto 
 <div class="top"><span>EST. 2026 &bull; ONE DAY, ONE PAGE</span><span>50 STORIES &bull; 20&ndash;21 NOV 2026</span><span>PRICE: THE NEWS</span></div>
 <div class="mast"><h1>THE WORLD</h1>
 <div class="dateline">SATURDAY <span>21 NOVEMBER 2026</span> &bull; WORLD NEWS IN ONE PAGE</div>
-<div class="sub">Every story below happened, or was first reported, on 20&ndash;21 November 2026 &bull; Sources: Reuters, AP, BBC, NPR, WSJ, CNN, FT, IMD</div></div>
+<div class="sub">Every story below happened, or was first reported, on 20&ndash;21 November 2026 &bull; Sources: Reuters, AP, BBC, WSJ, CNN, FT, ICJ, UN, IMD</div></div>
 <div class="datecheck">&#10003; DATE CHECKED &mdash; SATURDAY 21 NOVEMBER 2026 (UTC) &nbsp;&bull;&nbsp; ALL 50 STORIES DATED 20&ndash;21 NOV 2026</div>
 
 <div class="lead">
 <div class="leadtext">
 <div class="kicker">WAR &bull; LEAD STORY &mdash; KYIV, UKRAINE</div>
 <h2>Russia hits three Kyiv bridges in huge overnight barrage; at least 9 dead</h2>
-<p><span class="num">1.</span> More than <b>400 drones</b> and <b>110 missiles</b>, 27 of them ballistic, struck Ukraine overnight on 20 Nov. Three bridges over the Dnipro &mdash; Podilsko-Voskresenskyi, Darnytskyi and Pivdennyi &mdash; were hit, cutting power, water and heating in Kyiv and 11 regions. <span class="num">2.</span> A strike on <b>Kryvyi Rih</b> killed 2 and injured 42, including 4 children. <span class="num">3.</span> Two Russian Kh-101 missiles and a drone fell in <b>Poland</b> during the attack. <span class="num">4.</span> Ukraine deployed an experimental <b>laser air-defence</b> system in Kyiv. <span class="num">5.</span> UNICEF: <b>1,144 children</b> killed or injured in Ukraine in Jan&ndash;Oct 2026, the most in three years.</p>
+<p><span class="num">1.</span> <span class="src">REUTERS</span> <span class="conf">&#9679;&#9679;&#9679;</span> More than <b>400 drones</b> and <b>110 missiles</b>, 27 of them ballistic, struck Ukraine overnight on 20 Nov. Three bridges over the Dnipro &mdash; Podilsko-Voskresenskyi, Darnytskyi and Pivdennyi &mdash; were hit, cutting power, water and heating in Kyiv and 11 regions. <span class="num">2.</span> <span class="src">REUTERS</span> <span class="conf">&#9679;&#9679;&#9679;</span> A strike on <b>Kryvyi Rih</b> killed 2 and injured 42, including 4 children. <span class="num">3.</span> <span class="src">AP</span> <span class="conf med">&#9679;&#9679;&#9675;</span> Two Russian Kh-101 missiles and a drone fell in <b>Poland</b> during the attack. <span class="num">4.</span> <span class="src">BBC</span> <span class="conf med">&#9679;&#9679;&#9675;</span> Ukraine deployed an experimental <b>laser air-defence</b> system in Kyiv. <span class="num">5.</span> <span class="src">UN</span> <span class="conf">&#9679;&#9679;&#9679;</span> UNICEF: <b>1,144 children</b> killed or injured in Ukraine in Jan&ndash;Oct 2026, the most in three years.</p>
 </div>
 <div class="illus">
-<div class="sky">KYIV &mdash; THE DNIPRO, 20 NOV</div>
-<div class="burst b1"></div><div class="burst b2"></div><div class="burst b3"></div>
-<div class="smoke"></div><div class="smoke smoke2"></div>
+<div style="position:absolute;bottom:92px;left:0;right:0;height:46px;background:linear-gradient(#5a7ea6,#3d6f9e);clip-path:polygon(0 100%,0 40%,4% 40%,4% 20%,8% 20%,8% 55%,12% 55%,12% 10%,16% 10%,16% 45%,20% 45%,20% 30%,24% 30%,24% 60%,28% 60%,28% 15%,32% 15%,32% 50%,36% 50%,36% 25%,40% 25%,40% 55%,44% 55%,44% 5%,48% 5%,48% 45%,52% 45%,52% 35%,56% 35%,56% 60%,60% 60%,60% 20%,64% 20%,64% 50%,68% 50%,68% 30%,72% 30%,72% 55%,76% 55%,76% 12%,80% 12%,80% 48%,84% 48%,84% 28%,88% 28%,88% 58%,92% 58%,92% 18%,96% 18%,96% 45%,100% 45%,100% 100%)"></div><div class="sky">KYIV &mdash; THE DNIPRO, 20 NOV</div>
+<div style="position:absolute;bottom:100px;left:60px;width:3px;height:3px;background:#ffd23f"></div><div style="position:absolute;bottom:110px;left:120px;width:3px;height:3px;background:#ffd23f"></div><div style="position:absolute;bottom:104px;left:200px;width:3px;height:3px;background:#ffd23f"></div><div style="position:absolute;bottom:112px;left:280px;width:3px;height:3px;background:#ffd23f"></div><div style="position:absolute;bottom:98px;left:340px;width:3px;height:3px;background:#ffd23f"></div><div style="position:absolute;bottom:108px;left:400px;width:3px;height:3px;background:#ffd23f"></div><div class="burst b1"></div><div class="burst b2"></div><div class="burst b3"></div><div class="burst b4"></div><div class="burst b6" style="top:60px;left:290px;width:22px;height:22px"></div><div class="burst b5" style="top:34px;left:230px;width:26px;height:26px"></div>
+<div class="smoke"></div><div style="position:absolute;top:8px;left:150px;width:70px;height:14px;border-radius:50%;background:#fff;opacity:.5"></div><div style="position:absolute;top:14px;left:300px;width:56px;height:12px;border-radius:50%;background:#fff;opacity:.45"></div><div class="smoke smoke2"></div><div class="smoke smoke3"></div>
 <div class="pylon p1"></div><div class="pylon p2"></div><div class="pylon p3"></div>
-<div class="bridge"></div><div class="river"></div>
+<div class="cable c1"></div><div class="cable c2"></div><div class="cable c3"></div><div class="cable c4"></div>
+<div class="debris d1"></div><div class="debris d2"></div>
+<div class="truss"></div><div class="bridge"></div><div class="river2"></div><div class="river"></div>
 <div class="cap">DRAWN ILLUSTRATION &mdash; BRIDGES STRUCK, TRAFFIC HALTED</div>
 </div>
 </div>
 
 <div class="markets"><span>MARKETS &mdash; 20 NOV</span><span>NASDAQ <b>&minus;5.28%</b> &bull; S&amp;P 500 <b>&minus;3.70%</b> &bull; DOW <b>&minus;949.73</b></span><span>NVIDIA <b>&minus;14%</b></span><span>VIX 35.89</span><span>SENSEX <span class="up">+898</span></span></div>
 
+<div class="mapstrip">
+<svg viewBox="0 0 996 72">
+<rect width="996" height="72" fill="#dce8f0"/>
+<g stroke="#b9cddd" stroke-width="0.6"><line x1="20" y1="0" x2="20" y2="72"/><line x1="40" y1="0" x2="40" y2="72"/><line x1="60" y1="0" x2="60" y2="72"/><line x1="80" y1="0" x2="80" y2="72"/><line x1="100" y1="0" x2="100" y2="72"/><line x1="120" y1="0" x2="120" y2="72"/><line x1="140" y1="0" x2="140" y2="72"/><line x1="160" y1="0" x2="160" y2="72"/><line x1="180" y1="0" x2="180" y2="72"/><line x1="200" y1="0" x2="200" y2="72"/><line x1="220" y1="0" x2="220" y2="72"/><line x1="240" y1="0" x2="240" y2="72"/><line x1="260" y1="0" x2="260" y2="72"/><line x1="280" y1="0" x2="280" y2="72"/><line x1="300" y1="0" x2="300" y2="72"/><line x1="320" y1="0" x2="320" y2="72"/><line x1="340" y1="0" x2="340" y2="72"/><line x1="360" y1="0" x2="360" y2="72"/><line x1="380" y1="0" x2="380" y2="72"/><line x1="400" y1="0" x2="400" y2="72"/><line x1="420" y1="0" x2="420" y2="72"/><line x1="440" y1="0" x2="440" y2="72"/><line x1="460" y1="0" x2="460" y2="72"/><line x1="480" y1="0" x2="480" y2="72"/><line x1="500" y1="0" x2="500" y2="72"/><line x1="520" y1="0" x2="520" y2="72"/><line x1="540" y1="0" x2="540" y2="72"/><line x1="560" y1="0" x2="560" y2="72"/><line x1="580" y1="0" x2="580" y2="72"/><line x1="600" y1="0" x2="600" y2="72"/><line x1="620" y1="0" x2="620" y2="72"/><line x1="640" y1="0" x2="640" y2="72"/><line x1="660" y1="0" x2="660" y2="72"/><line x1="680" y1="0" x2="680" y2="72"/><line x1="700" y1="0" x2="700" y2="72"/><line x1="720" y1="0" x2="720" y2="72"/><line x1="740" y1="0" x2="740" y2="72"/><line x1="760" y1="0" x2="760" y2="72"/><line x1="780" y1="0" x2="780" y2="72"/><line x1="800" y1="0" x2="800" y2="72"/><line x1="820" y1="0" x2="820" y2="72"/><line x1="840" y1="0" x2="840" y2="72"/><line x1="860" y1="0" x2="860" y2="72"/><line x1="880" y1="0" x2="880" y2="72"/><line x1="900" y1="0" x2="900" y2="72"/><line x1="920" y1="0" x2="920" y2="72"/><line x1="940" y1="0" x2="940" y2="72"/><line x1="960" y1="0" x2="960" y2="72"/><line x1="980" y1="0" x2="980" y2="72"/><line x1="0" y1="12" x2="996" y2="12"/><line x1="0" y1="24" x2="996" y2="24"/><line x1="0" y1="36" x2="996" y2="36"/><line x1="0" y1="48" x2="996" y2="48"/><line x1="0" y1="60" x2="996" y2="60"/></g>
+<g fill="none" stroke="#8fb0cc" stroke-width="1"><path d="M10 14 q10 -3 20 0 t20 0 t20 0 t20 0"/><path d="M10 34 q10 -3 20 0 t20 0 t20 0 t20 0"/><path d="M10 54 q10 -3 20 0 t20 0 t20 0 t20 0"/><path d="M10 66 q10 -3 20 0 t20 0 t20 0 t20 0"/><path d="M120 14 q10 -3 20 0 t20 0 t20 0 t20 0"/><path d="M120 34 q10 -3 20 0 t20 0 t20 0 t20 0"/><path d="M300 14 q10 -3 20 0 t20 0 t20 0 t20 0"/><path d="M300 54 q10 -3 20 0 t20 0 t20 0 t20 0"/><path d="M520 14 q10 -3 20 0 t20 0 t20 0 t20 0"/><path d="M520 54 q10 -3 20 0 t20 0 t20 0 t20 0"/><path d="M760 14 q10 -3 20 0 t20 0 t20 0 t20 0"/><path d="M760 54 q10 -3 20 0 t20 0 t20 0 t20 0"/></g>
+<g fill="none" stroke="#9db8cc" stroke-width="1"><path d="M40 72 q12 -4 24 0 t24 0"/><path d="M380 76 q12 -4 24 0 t24 0"/><path d="M700 72 q12 -4 24 0 t24 0"/><path d="M880 46 q12 -4 24 0 t24 0"/></g>
+<g stroke="#8a7a55" stroke-width="1">
+<path d="M28 10 L60 6 L110 8 L150 6 L178 10 L210 18 L196 28 L180 34 L156 38 L120 42 L90 46 L62 50 L40 40 L28 24 Z" fill="#e8d5a2"/>
+<path d="M178 48 L200 44 L230 44 L250 56 L242 70 L226 78 L204 72 L186 62 L178 54 Z" fill="#e8d5a2"/>
+<path d="M558 10 L600 6 L640 8 L656 12 L672 22 L656 30 L646 36 L620 38 L596 38 L570 32 L558 22 Z" fill="#cfe3c0"/>
+<path d="M562 42 L600 38 L640 38 L664 52 L652 68 L640 76 L612 70 L580 62 L562 52 Z" fill="#f0d0a8"/>
+<path d="M664 8 L720 6 L780 4 L840 6 L900 4 L964 6 L970 20 L940 28 L916 38 L870 40 L826 42 L770 40 L720 36 L664 26 Z" fill="#f5e6a8"/>
+<path d="M826 56 L880 54 L930 56 L964 58 L970 68 L940 74 L896 76 L852 74 L832 68 Z" fill="#c9d8ec"/>
+<path d="M296 6 L340 4 L380 6 L416 4 L436 12 L428 20 L416 28 L380 30 L356 32 L330 28 L316 20 L296 12 Z" fill="#dfe8c8"/>
+<path d="M316 32 L350 30 L390 30 L416 32 L436 44 L424 54 L416 64 L390 66 L366 60 L340 54 L326 46 L316 38 Z" fill="#dfe8c8"/>
+</g>
+<g fill="#c9b183" stroke="#8a7a55" stroke-width="0.8"><path d="M664 8 L720 6 L760 8 L770 16 L730 20 L690 20 L664 16 Z"/><path d="M316 32 L350 30 L368 38 L340 44 L316 42 Z"/><path d="M558 10 L590 8 L606 14 L580 18 L558 16 Z"/></g>
+<g fill="none" stroke="#7a5c00" stroke-width="0.7"><path d="M340 8 L340 28 M380 6 L380 30 M600 8 L600 36 M700 8 L700 36 M800 6 L800 38 M880 8 L880 36 M100 10 L100 40 M140 8 L140 42 M620 40 L620 70 M720 8 L720 36 M860 8 L860 38 M900 56 L900 74 M360 32 L360 60 M400 32 L400 62"/></g>
+<g font-size="7" fill="#141414" font-family="Arial,sans-serif"><text x="10" y="66">0</text><text x="52" y="66">500 km</text><text x="96" y="66">1,000 km</text></g><g stroke="#141414" stroke-width="1.4"><line x1="8" y1="62" x2="8" y2="60"/><line x1="8" y1="61" x2="52" y2="61"/><line x1="52" y1="62" x2="52" y2="60"/><line x1="52" y1="61" x2="96" y2="61"/><line x1="96" y1="62" x2="96" y2="60"/></g>
+<g fill="none" stroke="#2e6b34" stroke-width="1.8" stroke-dasharray="5 3"><path d="M760 70 L730 62 L706 56"/></g>
+<g fill="none" stroke="#2e6b34" stroke-width="1.6"><path d="M696 54 m-11 0 a11 11 0 1 1 22 0 a11 11 0 1 1 -22 0"/><path d="M696 54 m-5.5 0 a5.5 5.5 0 1 1 11 0 a5.5 5.5 0 1 1 -11 0"/></g>
+<g fill="#9e1b1b"><circle cx="112" cy="26" r="3.4"/><circle cx="448" cy="14" r="3.4"/><circle cx="472" cy="22" r="3.4"/><circle cx="548" cy="18" r="3.4"/><circle cx="600" cy="48" r="3.4"/><circle cx="668" cy="50" r="3.4"/><circle cx="752" cy="30" r="3.4"/><circle cx="636" cy="42" r="3.4"/><circle cx="420" cy="18" r="3"/><circle cx="760" cy="66" r="3"/></g>
+<g font-size="8" fill="#141414" font-family="Arial,sans-serif" font-weight="bold">
+<text x="68" y="20">NEW YORK</text><text x="396" y="9">THE HAGUE</text><text x="480" y="16">KYIV</text>
+<text x="552" y="11">WARSAW</text><text x="604" y="42">GAZA</text><text x="640" y="62">ODISHA</text>
+<text x="758" y="24">SHENZHEN</text><text x="606" y="34">RIYADH</text>
+<text x="392" y="26">BRUSSELS</text><text x="730" y="72">ANTALYA</text>
+</g>
+<g transform="translate(972,66)"><circle r="10" fill="#f7f3e8" stroke="#141414" stroke-width="1"/><path d="M0 -8 L3 3 L0 0 L-3 3 Z" fill="#9e1b1b"/><text y="4" font-size="7" text-anchor="middle" font-weight="bold">N</text></g>
+</svg>
+<div class="mapcap">SCHEMATIC WORLD MAP &mdash; NOT TO SCALE &bull; 10 PLACES IN TODAY&rsquo;S NEWS &bull; DASHED LINE: AKVAN&rsquo;S TRACK &bull; CYCLONE SPIRAL OFF INDIA&rsquo;S EAST COAST</div>
+</div>
+
+<div style="margin:0 14px;padding:3px 4px;border-bottom:1px solid #111;font-family:'Noto Sans',Arial,sans-serif;font-size:9.5px;line-height:1.35"><b style="letter-spacing:1px">BY THE NUMBERS &mdash;</b> <b>400+</b> drones &bull; <b>110</b> missiles &bull; <b>27</b> ballistic &bull; <b>9</b> dead in Kyiv &bull; <b>1,144</b> children killed/injured &bull; <b>&minus;5.28%</b> Nasdaq &bull; <b>&minus;14%</b> Nvidia &bull; <b>35.89</b> VIX &bull; <b>370,000+</b> evacuated (Akvan) &bull; <b>10,000</b> Rohingya to resettle &bull; <b>51&ndash;48</b> Senate &bull; <b>19+ yrs</b> Gupta sentence &bull; <b>$2.36bn</b> GTA VI day one &bull; <b>1.8&deg;C</b> Oct warming &bull; <b>62</b> cheetahs &bull; <b>93&ndash;29</b> NZ trade vote &bull; <b>&euro;1bn</b> EU aid &bull; <b>1,000+</b> UK drones &bull; <b>40</b> Russian oil sites hit &bull; <b>3</b> bridges struck</div>
 <div class="cols">
 <div class="col">
 <h3>MARKETS &amp; TECH</h3>
-<div class="story"><span class="n">6.</span> <b>AI sell-off deepens:</b> Nasdaq &minus;5.28% to 22,617.73, wiping out its 2026 gains; S&amp;P 500 &minus;3.7% in a 7-day slide; Dow &minus;1.93%, both in correction.</div>
-<div class="story"><span class="n">7.</span> <b>Nvidia &minus;14%</b> to $125.53 as the SEC probes its accounting; down 23% on the week, 47.5% since its 6 Oct peak, shedding $2.7tn.</div>
-<div class="story"><span class="n">8.</span> <b>Chip rout:</b> AMD &minus;13.3%, Micron &minus;13.9%, Broadcom &minus;12.1%; chip index &minus;10.7%.</div>
-<div class="story"><span class="n">9.</span> <b>Anthropic shares &minus;8.5%</b> on their first day after the AI lab&rsquo;s blockbuster IPO.</div>
-<div class="story"><span class="n">10.</span> <b>Fear gauge:</b> VIX surged 86% in a week to 35.89, its highest in 19 months; investors fled to bonds.</div>
-<div class="story"><span class="n">11.</span> <b>India rallies:</b> Sensex +898 to 83,919.71, a nine-month high; Nifty reclaims 25,800.</div>
-<div class="story"><span class="n">12.</span> <b>NSE now world&rsquo;s 5th-largest</b> listed exchange operator, overtaking Nasdaq and HKEX, valued ~$59.3bn.</div>
-<div class="story"><span class="n">13.</span> <b>Cyberattack leak:</b> ransomware gang leaks data of thousands of Visa, Mastercard and JPMorgan customers after vendor breaches.</div>
-<div class="story"><span class="n">14.</span> <b>US cyber chief steps down:</b> National Cyber Director Sean Cairncross departs amid outages at major networks.</div>
-<div class="chart"><div class="chart-title">AI SELL-OFF &mdash; 20 NOV, DRAWN CHART</div>
-<div class="brow"><span class="blab">NASDAQ</span><div class="bar"><i style="width:100%"></i></div><span class="bval">&minus;5.28%</span></div>
-<div class="brow"><span class="blab">S&amp;P 500</span><div class="bar"><i style="width:70%"></i></div><span class="bval">&minus;3.70%</span></div>
-<div class="brow"><span class="blab">DOW</span><div class="bar"><i style="width:37%"></i></div><span class="bval">&minus;1.93%</span></div>
-<div class="brow"><span class="blab">SENSEX</span><div class="bar"><i class="up" style="width:20%"></i></div><span class="bval">+1.08%</span></div>
+<div class="story"><span class="n">6.</span> <span class="src">REUTERS</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>AI sell-off deepens:</b> Nasdaq &minus;5.28% to 22,617.73, wiping out its 2026 gains; S&amp;P 500 &minus;3.7% in a 7-day slide; Dow &minus;1.93%, both in correction.</div>
+<div class="story"><span class="n">7.</span> <span class="src">WSJ</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Nvidia &minus;14%</b> to $125.53 as the SEC probes its accounting; down 23% on the week, 47.5% since its 6 Oct peak, shedding $2.7tn.</div>
+<div class="story"><span class="n">8.</span> <span class="src">REUTERS</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>Chip rout:</b> AMD &minus;13.3%, Micron &minus;13.9%, Broadcom &minus;12.1%; chip index &minus;10.7%.</div>
+<div class="story"><span class="n">9.</span> <span class="src">CNN</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Anthropic shares &minus;8.5%</b> on their first day after the AI lab&rsquo;s blockbuster IPO.</div>
+<div class="story"><span class="n">10.</span> <span class="src">REUTERS</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>Fear gauge:</b> VIX surged 86% in a week to 35.89, its highest in 19 months; investors fled to bonds.</div>
+<div class="story"><span class="n">11.</span> <span class="src">REUTERS</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>India rallies:</b> Sensex +898 to 83,919.71, a nine-month high; Nifty reclaims 25,800.</div>
+<div class="story"><span class="n">12.</span> <span class="src">FT</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>NSE now world&rsquo;s 5th-largest</b> listed exchange operator, overtaking Nasdaq and HKEX, valued ~$59.3bn.</div>
+<div class="story"><span class="n">13.</span> <span class="src">AP</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Cyberattack leak:</b> ransomware gang leaks data of thousands of Visa, Mastercard and JPMorgan customers after vendor breaches.</div>
+<div class="story"><span class="n">14.</span> <span class="src">WSJ</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>US cyber chief steps down:</b> National Cyber Director Sean Cairncross departs amid outages at major networks.</div>
+<div class="chart"><div class="chart-title">MARKETS &mdash; 20 NOV, DRAWN CHART &bull; INDEXES &amp; MOVERS</div>
+<div class="brow"><span class="blab">NASDAQ</span><div class="bar"><i style="width:38%"></i></div><span class="bval">&minus;5.28%</span></div>
+<div class="brow"><span class="blab">S&amp;P 500</span><div class="bar"><i style="width:26%"></i></div><span class="bval">&minus;3.70%</span></div>
+<div class="brow"><span class="blab">DOW</span><div class="bar"><i style="width:14%"></i></div><span class="bval">&minus;1.93%</span></div>
+<div class="brow"><span class="blab">NVIDIA</span><div class="bar"><i style="width:100%"></i></div><span class="bval">&minus;14.0%</span></div>
+<div class="brow"><span class="blab">MICRON</span><div class="bar"><i style="width:99%"></i></div><span class="bval">&minus;13.9%</span></div>
+<div class="brow"><span class="blab">ANTHROPIC</span><div class="bar"><i style="width:61%"></i></div><span class="bval">&minus;8.5%</span></div>
+<div class="brow"><span class="blab">SENSEX</span><div class="bar"><i class="up" style="width:8%"></i></div><span class="bval">+1.08%</span></div>
 </div>
 <h3>CLIMATE &amp; WEATHER</h3>
-<div class="story"><span class="n">15.</span> <b>COP31 in overtime:</b> talks in Antalya spill past Friday as the draft drops all mention of fossil fuels and a $120bn finance target.</div>
-<div class="story"><span class="n">16.</span> <b>&ldquo;Worst COP ever&rdquo; warning:</b> activists protest as a third draft is promised for Saturday morning; next summit: Addis Ababa, Nov 2027.</div>
-<div class="story"><span class="n">17.</span> <b>Cyclone Akvan</b> crosses the Odisha coast near Gopalpur, 70&ndash;80 km/h; 370,000+ evacuated, no deaths reported.</div>
-<div class="story"><span class="n">18.</span> <b>Indonesia fires:</b> losses could reach $30bn; emissions the 3rd highest on record, Copernicus says.</div>
+<div class="story"><span class="n">15.</span> <span class="src">AP</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>COP31 in overtime:</b> talks in Antalya spill past Friday as the draft drops all mention of fossil fuels and a $120bn finance target.</div>
+<div class="story"><span class="n">16.</span> <span class="src">AP</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>&ldquo;Worst COP ever&rdquo; warning:</b> activists protest as a third draft is promised for Saturday morning; next summit: Addis Ababa, Nov 2027.</div>
+<div class="story"><span class="n">17.</span> <span class="src">IMD</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>Cyclone Akvan</b> crosses the Odisha coast near Gopalpur, 70&ndash;80 km/h; 370,000+ evacuated, no deaths reported.</div>
+<div class="story"><span class="n">18.</span> <span class="src">REUTERS</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Indonesia fires:</b> losses could reach $30bn; emissions the 3rd highest on record, Copernicus says.</div>
 </div>
 
 <div class="col">
 <h3>DIPLOMACY</h3>
-<div class="story"><span class="n">19.</span> <b>Trump&ndash;Xi&ndash;Putin meet in Shenzhen:</b> first trilateral summit; leaders agree humans must oversee military AI decisions.</div>
-<div class="story"><span class="n">20.</span> <b>Trump back from China,</b> calls the talks successful; a joint declaration is signed in Shenzhen.</div>
-<div class="story"><span class="n">21.</span> <b>Peace deadline:</b> Trump administration wants a Ukraine&ndash;Russia deal by early January, the FT reports.</div>
-<div class="story"><span class="n">22.</span> <b>Senate blocks Iran war-powers</b> resolution 51&ndash;48, backing Trump&rsquo;s authority to continue military operations.</div>
-<div class="story"><span class="n">23.</span> <b>Iran:</b> Trump says Tehran wants a deal, &ldquo;not one I&rsquo;ll accept&rdquo;; US naval blockade in force; no decision until after the new year.</div>
-<div class="story"><span class="n">24.</span> <b>Democrats aim to block Iran war funding</b> in the stopgap bill; government funding expires 11 Dec.</div>
-<div class="story"><span class="n">25.</span> <b>EU&ndash;UK trade and energy summit</b> meets in Brussels on 21 Nov.</div>
-<div class="story"><span class="n">26.</span> <b>India&ndash;Japan 2+2 talks</b> deepen defence ties, flagging economic coercion via export curbs.</div>
-<div class="story"><span class="n">27.</span> <b>NZ passes India free-trade deal</b> 93&ndash;29 in parliament.</div>
-<div class="story"><span class="n">28.</span> <b>EU adopts &euro;1bn military aid</b> for Ukraine; completes ~&euro;8bn reforms disbursement to Kyiv.</div>
-<div class="story"><span class="n">29.</span> <b>UK pledges 1,000+ drones</b> for Ukraine in a &pound;260m package.</div>
-<div class="story"><span class="n">30.</span> <b>US sanctions the Comancheros</b> and the &rsquo;Ndrangheta; adds four Iranians to the OFAC list.</div>
-<div class="story"><span class="n">31.</span> <b>Estonia shuts all road borders</b> with Russia after suspected arson sabotage.</div>
-<div class="story"><span class="n">32.</span> <b>Denmark alleges a Russian plot</b> to kill an American-Ukrainian in Denmark.</div>
-<div class="story"><span class="n">33.</span> <b>Saudi-led coalition downs 3 Houthi missiles</b> headed for Riyadh; explosions reported in the capital.</div>
-<div class="story"><span class="n">34.</span> <b>Ukraine hits 40 Russian oil facilities</b> in 50 days; strikes the Druzhba pipeline station in Tatarstan.</div>
+<div class="story"><span class="n">19.</span> <span class="src">WSJ</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>Trump&ndash;Xi&ndash;Putin meet in Shenzhen:</b> first trilateral summit; leaders agree humans must oversee military AI decisions.</div>
+<div class="story"><span class="n">20.</span> <span class="src">AP</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Trump back from China,</b> calls the talks successful; a joint declaration is signed in Shenzhen.</div>
+<div class="story"><span class="n">21.</span> <span class="src">FT</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Peace deadline:</b> Trump administration wants a Ukraine&ndash;Russia deal by early January, the FT reports.</div>
+<div class="story"><span class="n">22.</span> <span class="src">AP</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>Senate blocks Iran war-powers</b> resolution 51&ndash;48, backing Trump&rsquo;s authority to continue military operations.</div>
+<div class="story"><span class="n">23.</span> <span class="src">REUTERS</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Iran:</b> Trump says Tehran wants a deal, &ldquo;not one I&rsquo;ll accept&rdquo;; US naval blockade in force; no decision until after the new year.</div>
+<div class="story"><span class="n">24.</span> <span class="src">AP</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Democrats aim to block Iran war funding</b> in the stopgap bill; government funding expires 11 Dec.</div>
+<div class="story"><span class="n">25.</span> <span class="src">REUTERS</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>EU&ndash;UK trade and energy summit</b> meets in Brussels on 21 Nov.</div>
+<div class="story"><span class="n">26.</span> <span class="src">REUTERS</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>India&ndash;Japan 2+2 talks</b> deepen defence ties, flagging economic coercion via export curbs.</div>
+<div class="story"><span class="n">27.</span> <span class="src">AP</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>NZ passes India free-trade deal</b> 93&ndash;29 in parliament.</div>
+<div class="story"><span class="n">28.</span> <span class="src">REUTERS</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>EU adopts &euro;1bn military aid</b> for Ukraine; completes ~&euro;8bn reforms disbursement to Kyiv.</div>
+<div class="story"><span class="n">29.</span> <span class="src">BBC</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>UK pledges 1,000+ drones</b> for Ukraine in a &pound;260m package.</div>
+<div class="story"><span class="n">30.</span> <span class="src">AP</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>US sanctions the Comancheros</b> and the &rsquo;Ndrangheta; adds four Iranians to the OFAC list.</div>
+<div class="story"><span class="n">31.</span> <span class="src">REUTERS</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Estonia shuts all road borders</b> with Russia after suspected arson sabotage.</div>
+<div class="story"><span class="n">32.</span> <span class="src">REUTERS</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Denmark alleges a Russian plot</b> to kill an American-Ukrainian in Denmark.</div>
+<div class="story"><span class="n">33.</span> <span class="src">REUTERS</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>Saudi-led coalition downs 3 Houthi missiles</b> headed for Riyadh; explosions reported in the capital.</div>
+<div class="story"><span class="n">34.</span> <span class="src">REUTERS</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Ukraine hits 40 Russian oil facilities</b> in 50 days; strikes the Druzhba pipeline station in Tatarstan.</div>
 </div>
 
 <div class="col">
 <h3>WORLD &bull; LAW &bull; SPORT</h3>
-<div class="story"><span class="n">35.</span> <b>ICJ: Myanmar committed genocide</b> against the Rohingya &mdash; the first state ever found guilty of genocide by an international court (19 Nov).</div>
-<div class="story"><span class="n">36.</span> <b>Malaysia to resettle 10,000 Rohingya</b> refugees to Turkiye.</div>
-<div class="story"><span class="n">37.</span> <b>Mongolia&rsquo;s president resigns:</b> parliament approves Khurelsukh Ukhnaa&rsquo;s exit amid corruption claims; an early election follows &mdash; a first.</div>
-<div class="story"><span class="n">38.</span> <b>Nikhil Gupta jailed 19+ years</b> in the US over the Pannun murder plot.</div>
-<div class="story"><span class="n">39.</span> <b>Trump pardons Pete Rose</b> posthumously, baseball&rsquo;s all-time hits leader.</div>
-<div class="story"><span class="n">40.</span> <b>India 159/1 vs New Zealand,</b> Wellington Test, day two: Jaiswal 85, Rahul 52* &mdash; India&rsquo;s first century opening stand in NZ this century.</div>
-<div class="story"><span class="n">41.</span> <b>GTA VI launches:</b> $2.36bn and ~24.6m copies on day one &mdash; nearly triple GTA V&rsquo;s first day.</div>
-<div class="story"><span class="n">42.</span> <b>2027 Hyundai Elantra</b> unveiled at the LA Auto Show.</div>
-<div class="story"><span class="n">43.</span> <b>India&rsquo;s first indigenous H5N1 chicken vaccine</b> unveiled, made by ICAR-NIHSAD, Bhopal.</div>
-<div class="story"><span class="n">44.</span> <b>Four cheetah cubs born wild</b> at Kuno, India; national count reaches 62.</div>
-<div class="story"><span class="n">45.</span> <b>IFFI 2026 opens in Goa.</b></div>
-<div class="story"><span class="n">46.</span> <b>Russia hits Europe&rsquo;s largest substation</b> in its mass energy attack on Ukraine.</div>
-<div class="story"><span class="n">47.</span> <b>Trump warns Musk</b> after the billionaire distances himself from MAGA.</div>
-<div class="story"><span class="n">48.</span> <b>Nuclear deadlock:</b> Trump says an arms-reduction deal with China and Russia will be difficult.</div>
-<div class="story"><span class="n">49.</span> <b>October 2026 was 1.8&deg;C</b> above the mid-1800s, Berkeley Earth says, as COP31 warns of a 1.5&deg;C overshoot.</div>
-<div class="story"><span class="n">50.</span> <b>Power, water, heating out</b> across Kyiv and 11 regions; three nuclear plants cut output after the strikes.</div>
+<div class="story"><span class="n">35.</span> <span class="src">ICJ</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>ICJ: Myanmar committed genocide</b> against the Rohingya &mdash; the first state ever found guilty of genocide by an international court (19 Nov).</div>
+<div class="story"><span class="n">36.</span> <span class="src">AP</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Malaysia to resettle 10,000 Rohingya</b> refugees to Turkiye.</div>
+<div class="story"><span class="n">37.</span> <span class="src">REUTERS</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Mongolia&rsquo;s president resigns:</b> parliament approves Khurelsukh Ukhnaa&rsquo;s exit amid corruption claims; an early election follows &mdash; a first.</div>
+<div class="story"><span class="n">38.</span> <span class="src">AP</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>Nikhil Gupta jailed 19+ years</b> in the US over the Pannun murder plot.</div>
+<div class="story"><span class="n">39.</span> <span class="src">AP</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>Trump pardons Pete Rose</b> posthumously, baseball&rsquo;s all-time hits leader.</div>
+<div class="story"><span class="n">40.</span> <span class="src">AP</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>India 159/1 vs New Zealand,</b> Wellington Test, day two: Jaiswal 85, Rahul 52* &mdash; India&rsquo;s first century opening stand in NZ this century.</div>
+<div class="story"><span class="n">41.</span> <span class="src">CNN</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>GTA VI launches:</b> $2.36bn and ~24.6m copies on day one &mdash; nearly triple GTA V&rsquo;s first day.</div>
+<div class="story"><span class="n">42.</span> <span class="src">AP</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>2027 Hyundai Elantra</b> unveiled at the LA Auto Show.</div>
+<div class="story"><span class="n">43.</span> <span class="src">AP</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>India&rsquo;s first indigenous H5N1 chicken vaccine</b> unveiled, made by ICAR-NIHSAD, Bhopal.</div>
+<div class="story"><span class="n">44.</span> <span class="src">AP</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Four cheetah cubs born wild</b> at Kuno, India; national count reaches 62.</div>
+<div class="story"><span class="n">45.</span> <span class="src">AP</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>IFFI 2026 opens in Goa.</b></div>
+<div class="story"><span class="n">46.</span> <span class="src">REUTERS</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Russia hits Europe&rsquo;s largest substation</b> in its mass energy attack on Ukraine.</div>
+<div class="story"><span class="n">47.</span> <span class="src">CNN</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Trump warns Musk</b> after the billionaire distances himself from MAGA.</div>
+<div class="story"><span class="n">48.</span> <span class="src">REUTERS</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>Nuclear deadlock:</b> Trump says an arms-reduction deal with China and Russia will be difficult.</div>
+<div class="story"><span class="n">49.</span> <span class="src">AP</span> <span class="conf med">&#9679;&#9679;&#9675;</span> <b>October 2026 was 1.8&deg;C</b> above the mid-1800s, Berkeley Earth says, as COP31 warns of a 1.5&deg;C overshoot.</div>
+<div class="story"><span class="n">50.</span> <span class="src">REUTERS</span> <span class="conf">&#9679;&#9679;&#9679;</span> <b>Power, water, heating out</b> across Kyiv and 11 regions; three nuclear plants cut output after the strikes.</div>
 </div>
 </div>
+
+<div class="srcmat"><b>SOURCES &mdash; ALL 50 STORIES SOURCED:</b> <span class="k">REUTERS 19</span> &bull; AP 18 &bull; WSJ 3 &bull; CNN 3 &bull; BBC 2 &bull; FT 2 &bull; ICJ 1 &bull; UN 1 &bull; IMD 1 &nbsp;|&nbsp; <b>HOW SURE:</b> <span style="color:#1a7a2e">&#9679;&#9679;&#9679;</span> CONFIRMED (19) &bull; <span style="color:#b45309">&#9679;&#9679;&#9675;</span> REPORTED (31)</div>
 
 <div class="timeline"><h3>OVERNIGHT &mdash; UTC, INTO SATURDAY 21 NOVEMBER</h3>
 <div class="row"><span>00:00</span><div>COP31 talks run into overtime in Antalya; negotiators still split over fossil fuels and finance.</div></div>
 <div class="row"><span>01:17</span><div>AP: activists and leaders condemn the COP31 draft as fossil fuels go unmentioned.</div></div>
-<div class="row"><span>01:44</span><div>US Senate&rsquo;s 51&ndash;48 rejection of the Iran war-powers resolution is reported.</div></div>
 <div class="row"><span>03:00</span><div>Kyiv restores traffic over the Podilsko-Voskresenskyi bridge; two others stay restricted.</div></div>
 <div class="row"><span>05:00</span><div>Cyclone Akvan weakens to a depression as it moves inland over Odisha.</div></div>
 </div>
