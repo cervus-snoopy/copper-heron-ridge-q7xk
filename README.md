@@ -1,49 +1,88 @@
 # THE WORLD — Saturday 21 November 2026
 
-[![make.fun](https://make.fun/bounty/news-image-20261121/badge.svg)](https://make.fun/bounty/news-image-20261121)
-[![news-image-20261121](https://make.fun/c/news-image-20261121/badge.svg)](https://make.fun/bounty/news-image-20261121)
-[![copper-heron-ridge-q7xk](https://make.fun/bounty/news-image-20261121/copper-heron-ridge-q7xk/badge.svg)](https://make.fun/bounty/news-image-20261121)
+[![make.fun bounty](https://make.fun/bounty/news-image-20261121/badge.svg)](https://make.fun/bounty/news-image-20261121)
+[![make.fun competition](https://make.fun/c/news-image-20261121/badge.svg)](https://make.fun/bounty/news-image-20261121)
+[![make.fun entry copper-heron-ridge-q7xk](https://make.fun/bounty/news-image-20261121/copper-heron-ridge-q7xk/badge.svg)](https://make.fun/bounty/news-image-20261121)
 
-One image that sums up the world's news of **Saturday 21 November 2026** — a
-newspaper front page, "THE WORLD", built from scratch in HTML/CSS and rendered
-to `entry.png` (1024×1024, under 1 MiB).
+A one-page newspaper front page for Saturday 21 November 2026 — the whole
+world's news, fitted onto a single 1024×1024 image. Entry for the
+[news-image-20261121 bounty](https://make.fun/bounty/news-image-20261121)
+(`copper-heron-ridge-q7xk`).
 
-Bounty: [news-image-20261121 on make.fun](https://make.fun/bounty/news-image-20261121)
+## What this is
 
-## What's on the page
+`entry.png` is a classic broadsheet front page, drawn as a single square
+image (1024×1024). It carries **50 sourced stories**, every one of them
+dated 20–21 November 2026 — nothing older, nothing undated. The page was
+laid out from `frontpage.html`, a hand-built HTML/CSS page, and rendered
+to the PNG that ships here.
 
-- **Lead story:** Russia's massive overnight barrage on Ukraine (20 Nov) —
-  400+ drones and 110+ missiles, three Kyiv bridges over the Dnipro struck,
-  at least 9 dead; Kryvyi Rih strike kills 2, injures 42. Drawn illustration
-  of the Dnipro bridges under attack (pure CSS shapes, no external images).
-- **Markets strip:** Nasdaq −5.28%, S&P 500 −3.70%, Dow −949.73, Nvidia −14%
-  (SEC accounting probe), VIX 35.89, Sensex +898.
-- **50 numbered stories** across War, Markets & Tech, Diplomacy, Climate &
-  Weather, World, Law and Sport — every one happened or was first reported
-  on 20–21 November 2026, sourced from Reuters, AP, BBC, NPR, WSJ, CNN, FT
-  and IMD. Highlights: Trump–Xi–Putin Shenzhen summit, Senate blocks the
-  Iran war-powers resolution 51–48, COP31 in overtime with fossil fuels
-  dropped from the draft, Cyclone Akvan's Odisha landfall, ICJ finds Myanmar
-  committed genocide against the Rohingya, Mongolia's president resigns,
-  India 159/1 in Wellington, GTA VI's $2.36bn launch day.
-- **Overnight UTC timeline** (00:00–05:00 UTC into Saturday 21 November).
+Each story names its source — Reuters (19 stories), AP (18), WSJ (3),
+CNN (3), BBC (2), FT (2), ICJ (1), UN (1) and IMD (1) — and carries a
+confidence mark: 19 stories are confirmed, 31 are reported.
+
+## Lead story
+
+**Russia hits three Kyiv bridges in huge overnight barrage; at least 9 dead.**
+More than 400 drones and 110 missiles, 27 of them ballistic, struck
+Ukraine overnight on 20 November. Three bridges over the Dnipro —
+Podilsko-Voskresenskyi, Darnytskyi and Pivdennyi — were hit, cutting
+power, water and heating in Kyiv and 11 regions. A strike on Kryvyi Rih
+killed 2 and injured 42, including 4 children. The lead is paired with a
+drawn illustration of the Dnipro bridges under attack.
+
+## Markets strip
+
+The 20 November sell-off runs across the top of the page:
+
+- **Nasdaq −5.28%** — wiping out its 2026 gains
+- **S&P 500 −3.70%** in a seven-day slide
+- **Dow −949.73** (−1.93%), both indexes in correction
+- **Nvidia −14%** to $125.53 as the SEC probes its accounting
+- **VIX 35.89**, up 86% in a week — its highest in 19 months
+- **Sensex +898** to 83,919.71, a nine-month high
+
+A drawn bar chart inside the page repeats the same moves for Nasdaq,
+S&P 500, Dow, Nvidia, Micron, Anthropic and Sensex.
+
+## What else is on the page
+
+- **A schematic world map** marking 10 places in the day's news — New
+  York, The Hague, Kyiv, Warsaw, Gaza, Odisha, Shenzhen, Riyadh,
+  Brussels and Antalya — with Cyclone Akvan's track off India's east
+  coast.
+- **By the numbers** — 400+ drones, 110 missiles, 370,000+ evacuated,
+  10,000 Rohingya to resettle, $2.36bn for GTA VI on day one.
+- **Three columns:** Markets & Tech, Diplomacy, and World / Law / Sport —
+  from the Trump–Xi–Putin summit in Shenzhen and the ICJ's genocide
+  ruling on Myanmar to the India–New Zealand Test and four cheetah cubs
+  born wild at Kuno.
+- **An overnight UTC timeline** into Saturday 21 November, and a full
+  source matrix listing every outlet behind the 50 stories.
 
 ## How it runs
 
-`main.ts` (Node 22, standard library only) copies `entry.png` to
-`$MAKEFUN_OUTPUT_DIR/entry.png` (default `/output`). It runs twice with no
-network and produces identical bytes both times.
+The finished image already exists in this repository, so the build step
+is deliberately tiny. `main.ts` (Node, standard library only) copies
+`entry.png` into the output directory:
 
 ```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+MAKEFUN_OUTPUT_DIR=/output node main.ts
 ```
+
+It creates the output directory if it does not exist, copies the file
+byte-for-byte, and checks that the copy is the same size as the original
+before reporting success. No network, no dependencies, no randomness —
+running it twice gives the same result twice.
 
 ## Files
 
-- `frontpage.html` — the front page, authored from scratch (the source of the image)
-- `entry.png` — the rendered 1024×1024 front page
-- `main.ts` — the entry program
-- `LICENSE` — MIT
+- `entry.png` — the finished front page, 1024×1024.
+- `frontpage.html` — the HTML/CSS layout the front page was rendered from.
+- `main.ts` — the build script; copies `entry.png` to
+  `$MAKEFUN_OUTPUT_DIR` (default `/output`).
+- `README.md` — this file.
+- `LICENSE` — MIT license.
 
 ## License
 
